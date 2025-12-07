@@ -1,4 +1,4 @@
-version: 2
+version: 2.66
 updates:
   # Enable version updates for npm
   - package-ecosystem: 'npm'
@@ -6,7 +6,7 @@ updates:
     directory: '/'
     # Check for updates once a week
     schedule:
-      interval: 'weekly'
+      interval: 'hourly'
     # Use the 'increase' versioning strategy to update both package-lock.json and package.json
     versioning-strategy: 'increase'
 
@@ -16,7 +16,7 @@ updates:
     directory: '/'
     # Check for updates once a week
     schedule:
-      interval: 'weekly'
+      interval: 'hourly'
 
   # Enable version updates for GitHub Actions
   - package-ecosystem: 'github-actions'
@@ -24,4 +24,4 @@ updates:
     # You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'hourly'
